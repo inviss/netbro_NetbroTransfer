@@ -1,0 +1,156 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>kr.co.d2net.netbro</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+	    <module>../kr.co.d2net.netbro.transfer</module>
+	    <module>../kr.co.d2net.netbro.transfer.addons</module>
+	    <module>../kr.co.d2net.netbro.transfer.client</module>
+	    <module>../kr.co.d2net.netbro.transfer.feature</module>
+	    <module>../kr.co.d2net.netbro.transfer.i18n</module>
+	    <module>../kr.co.d2net.netbro.transfer.model</module>
+	    <module>../kr.co.d2net.netbro.transfer.product</module>
+	    <module>../kr.co.d2net.netbro.transfer.service</module>
+	    <module>../kr.co.d2net.netbro.common</module>
+	    <module>../kr.co.d2net.netbro.logging</module>
+	    <module>../kr.co.d2net.netbro.logging.config</module>
+	    <module>../com.enterprisedt.ftp</module>
+	    <module>../org.codehaus.jackson</module>
+	</modules>
+
+	<properties>
+	    <tycho.version>0.19.0</tycho.version>
+		<!-- no default here -->
+		<tycho.test.vm.argline>-Xmx500m -Xdebug -Xrunjdwp:transport=dt_socket,address=1044,server=y,suspend=n</tycho.test.vm.argline>
+		<tycho.test.vm.useUiThread>false</tycho.test.vm.useUiThread>
+		
+	    <kepler-repo.url>http://download.eclipse.org/releases/kepler</kepler-repo.url>
+	</properties>
+
+  <repositories>
+    <repository>
+      <id>kepler</id>
+      <url>${kepler-repo.url}</url>
+      <layout>p2</layout>
+    </repository>
+
+  </repositories>
+
+
+	<distributionManagement>
+	    <repository>
+			<id>ftp-repository</id>
+			<url>ftp://14.36.147.24/home/d2net/repository/</url>
+	    </repository>
+	</distributionManagement>
+  
+	<profiles>
+	  	<profile>
+	  		<id>sign</id>
+	  		<activation>
+	  			<property>
+	  				<name>jarsigner.alias</name>
+	  			</property>
+	  		</activation>
+	  		<build>
+	  			<plugins>
+	  				<plugin>
+				      	<groupId>org.apache.maven.plugins</groupId>
+				      	<artifactId>maven-jarsigner-plugin</artifactId>
+				      	<version>1.2</version>
+				      	<executions>
+				      		<execution>
+				      			<id>sign</id>
+				      			<goals>
+				      				<goal>sign</goal>
+				      			</goals>
+				      		</execution>
+				      	</executions>
+				      </plugin>
+	  			</plugins>
+	  		</build>
+	  	</profile>
+	</profiles>
+  
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<configuration>
+					<!-- recommended: use p2-based target platform resolver 
+					<resolver>p2</resolver>
+					<ignoreTychoRepositories>true</ignoreTychoRepositories>
+					<target>
+						<artifact>
+							<groupId>target</groupId>
+							<artifactId>kepler</artifactId>
+							<version>1.0.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+					-->
+					<environments>
+					<!--  
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+					-->
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+					
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+    
+		<extensions>
+			<!-- Enabling the use of FTP -->
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+    
+	</build>
+
+</project>

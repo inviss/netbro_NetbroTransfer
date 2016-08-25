@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FtpClient
+Bundle-SymbolicName: com.enterprisedt.ftpclient
+Bundle-Version: 2.4.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: com.enterprisedt,
+ com.enterprisedt.net.ftp,
+ com.enterprisedt.net.ftp.internal,
+ com.enterprisedt.net.ftp.test,
+ com.enterprisedt.util,
+ com.enterprisedt.util.debug,
+ com.enterprisedt.util.proxy

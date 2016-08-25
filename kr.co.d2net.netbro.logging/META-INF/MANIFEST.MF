@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Logging
+Bundle-SymbolicName: kr.co.d2net.netbro.logging
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/log4j-1.2.16.jar,
+ lib/slf4j-api-1.6.1.jar,
+ lib/slf4j-log4j12-1.6.1.jar
+Export-Package: org.slf4j

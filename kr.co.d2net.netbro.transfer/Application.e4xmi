@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_AlbRUAWuEeSljdDcehhahA" elementId="kr.co.d2net.netbro.transfer.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_CMvNYAWuEeSljdDcehhahA" elementId="kr.co.d2net.netbro.transfer.trimmedwindow.0" label="NetBro Transfer" x="100" y="100" width="800" height="720">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_DgqxgAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.partsashcontainer.0" horizontal="true">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_FBtGcAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.partsashcontainer.1" accessibilityPhrase="TF1">
+        <children xsi:type="basic:PartStack" xmi:id="_GtRQYAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.partstack.0" containerData="50">
+          <tags>NoAutoCollapse</tags>
+          <tags>NoMove</tags>
+          <children xsi:type="basic:Part" xmi:id="_IY8IAAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.part.transfer1" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.parts.Transfer1Part" label="Transfer_1">
+            <toolbar xmi:id="_Q0RGoBPUEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.toolbar.0">
+              <children xsi:type="menu:HandledToolItem" xmi:id="_8pnD0BPWEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.handledtoolitem.part1.canuse" iconURI="platform:/plugin/kr.co.d2net.netbro.transfer/icons/padlock.gif" command="_fck-YBPVEeSXbehJTgDdMg">
+                <parameters xmi:id="_4wk1YBPZEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.parameter.1part" name="kr.co.d2net.netbro.transfer.commandparameter.partno" value="1"/>
+              </children>
+            </toolbar>
+          </children>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_JrjmcAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.partstack.2" containerData="50">
+          <children xsi:type="basic:Part" xmi:id="_KAbDMAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.part.transfer2" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.parts.Transfer2Part" label="Transfer_2">
+            <toolbar xmi:id="_XT6jQBPXEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.toolbar.1">
+              <children xsi:type="menu:HandledToolItem" xmi:id="_bRnH4BPXEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.handledtoolitem.part2.canuse" iconURI="platform:/plugin/kr.co.d2net.netbro.transfer/icons/padlock.gif" command="_fck-YBPVEeSXbehJTgDdMg">
+                <parameters xmi:id="_gGSbABPbEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.parameter.2part" name="kr.co.d2net.netbro.transfer.commandparameter.partno" value="2"/>
+              </children>
+            </toolbar>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="basic:PartSashContainer" xmi:id="_GGBDIAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.partsashcontainer.2" accessibilityPhrase="TF2">
+        <children xsi:type="basic:PartStack" xmi:id="_IDLTYAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.partstack.1" containerData="50" accessibilityPhrase="&#xba54;&#xd0c0;&#xc815;&#xbcf4;">
+          <children xsi:type="basic:Part" xmi:id="_It8HoAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.part.transfer3" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.parts.Transfer3Part" label="Transfer_3">
+            <toolbar xmi:id="_YzDawBPXEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.toolbar.2">
+              <children xsi:type="menu:HandledToolItem" xmi:id="_io6soBPXEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.handledtoolitem.part3.canuse" iconURI="platform:/plugin/kr.co.d2net.netbro.transfer/icons/padlock.gif" command="_fck-YBPVEeSXbehJTgDdMg">
+                <parameters xmi:id="_mWw6kBPbEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.parameter.3part" name="kr.co.d2net.netbro.transfer.commandparameter.partno" value="3"/>
+              </children>
+            </toolbar>
+          </children>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_KWjrQAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.partstack.3" containerData="50">
+          <children xsi:type="basic:Part" xmi:id="_KwZuoAygEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.part.transfer4" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.parts.Transfer4Part" label="Transfer_4">
+            <toolbar xmi:id="_Zg4xIBPXEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.toolbar.3">
+              <children xsi:type="menu:HandledToolItem" xmi:id="_lPqscBPXEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.handledtoolitem.part4" iconURI="platform:/plugin/kr.co.d2net.netbro.transfer/icons/padlock.gif" command="_fck-YBPVEeSXbehJTgDdMg">
+                <parameters xmi:id="_pXEC0BPbEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.parameter.4part" name="kr.co.d2net.netbro.transfer.commandparameter.partno" value="4"/>
+              </children>
+            </toolbar>
+          </children>
+        </children>
+      </children>
+    </children>
+    <variables>shellMaximized</variables>
+    <mainMenu xmi:id="_0lcdcAyhEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_2PBqYAyhEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.menu.file" label="&#xba54;&#xb274;">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_4zxfEAyhEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.handledmenuitem.manualupload" label="&#xc218;&#xb3d9;&#xb4f1;&#xb85d;" command="_qncJ8AymEeSuqeO-e203_w"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_-vNiwAyhEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__MpFoAyhEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.handledmenuitem.connect.test" label="&#xc5f0;&#xacb0;&#xd14c;&#xc2a4;&#xd2b8;" command="_uhp8wAymEeSuqeO-e203_w"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_A4cgIAyiEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.handledmenuitem.upload.test" label="&#xb4f1;&#xb85d;&#xd14c;&#xc2a4;&#xd2b8;" command="_vfkWgAymEeSuqeO-e203_w"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_C5yFwAyiEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.menuseparator.1"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_DY7f4AyiEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.handledmenuitem.exit" label="&#xc885;&#xb8cc;" command="_wVOMIAymEeSuqeO-e203_w"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_Fayp8AyiEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.menu.config" label="&#xc124;&#xc815;">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_IPN5YAyiEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.handledmenuitem.manager" label="&#xad00;&#xb9ac;&#xc124;&#xc815;" command="_67zJQAymEeSuqeO-e203_w"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_NIU9YAyiEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.handledmenuitem.update" label="&#xc5c5;&#xb370;&#xc774;&#xd2b8;" command="_8YHWQAymEeSuqeO-e203_w"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_sCo_AAzaEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.handler.exit" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.handlers.ExitHandler" command="_wVOMIAymEeSuqeO-e203_w"/>
+  <handlers xmi:id="_3UhZUA2SEeSB14QOvybkAA" elementId="kr.co.d2net.netbro.transfer.handler.manager.config" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.handlers.PreferenceHandler" command="_67zJQAymEeSuqeO-e203_w"/>
+  <handlers xmi:id="_liLOMBPWEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.handler.canuse" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.handlers.CanUseHandler" command="_fck-YBPVEeSXbehJTgDdMg"/>
+  <handlers xmi:id="_APxXQBe-EeSiROHLG9HCXw" elementId="kr.co.d2net.netbro.transfer.handler.manualupload" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.handlers.ManualRegisterHandler" command="_qncJ8AymEeSuqeO-e203_w"/>
+  <handlers xmi:id="_ECsPQBe-EeSiROHLG9HCXw" elementId="kr.co.d2net.netbro.transfer.handler.connect.test" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.handlers.ConnectionCheckHandler" command="_uhp8wAymEeSuqeO-e203_w"/>
+  <handlers xmi:id="_GKC9UBe-EeSiROHLG9HCXw" elementId="kr.co.d2net.netbro.transfer.handler.upload.test" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.handlers.ContentTransferHandler" command="_vfkWgAymEeSuqeO-e203_w"/>
+  <handlers xmi:id="_keCN0B3gEeShwdpuPt0nKw" elementId="kr.co.d2net.netbro.transfer.handler.update" contributionURI="bundleclass://kr.co.d2net.netbro.transfer/kr.co.d2net.netbro.transfer.handlers.UpdateHandler" command="_8YHWQAymEeSuqeO-e203_w"/>
+  <rootContext xmi:id="_uAvLwA89EeSB14QOvybkAA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="Windows and Dialogs" description="Windows and Dialogs"/>
+  <commands xmi:id="_qncJ8AymEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.command.manualupload" commandName="&#xc218;&#xb3d9;&#xb4f1;&#xb85d;"/>
+  <commands xmi:id="_uhp8wAymEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.command.connect.test" commandName="&#xc5f0;&#xacb0;&#xd14c;&#xc2a4;&#xd2b8;"/>
+  <commands xmi:id="_vfkWgAymEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.command.upload.test" commandName="&#xb4f1;&#xb85d;&#xd14c;&#xc2a4;&#xd2b8;"/>
+  <commands xmi:id="_wVOMIAymEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.command.exit" commandName="&#xc885;&#xb8cc;"/>
+  <commands xmi:id="_67zJQAymEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.command.manage.config" commandName="&#xad00;&#xb9ac;&#xc124;&#xc815;"/>
+  <commands xmi:id="_8YHWQAymEeSuqeO-e203_w" elementId="kr.co.d2net.netbro.transfer.command.update" commandName="&#xc5c5;&#xb370;&#xc774;&#xd2b8;"/>
+  <commands xmi:id="_fck-YBPVEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.command.canuse" commandName="&#xc0ac;&#xc6a9;&#xc5ec;&#xbd80;">
+    <parameters xmi:id="_kGJ_UBPaEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.commandparameter.partno" name="Part Number"/>
+  </commands>
+  <addons xmi:id="_AlbRUQWuEeSljdDcehhahA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_AlbRUgWuEeSljdDcehhahA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_AlbRUwWuEeSljdDcehhahA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_AlbRVAWuEeSljdDcehhahA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="__dWMkA89EeSB14QOvybkAA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_AlbRVgWuEeSljdDcehhahA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_LlrnUA5BEeSB14QOvybkAA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_VGTOgBCdEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.addon.0" contributionURI="bundleclass://kr.co.d2net.netbro.transfer.addons/kr.co.d2net.netbro.transfer.addons.SetPerspectiveAddon"/>
+  <addons xmi:id="_W_vhgBFPEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.addon.1" contributionURI="bundleclass://kr.co.d2net.netbro.transfer.addons/kr.co.d2net.netbro.transfer.addons.MyContextAddon"/>
+  <addons xmi:id="_j5tdkBFPEeSXbehJTgDdMg" elementId="kr.co.d2net.netbro.transfer.addon.2" contributionURI="bundleclass://kr.co.d2net.netbro.transfer.addons/kr.co.d2net.netbro.transfer.addons.MyModelAddon"/>
+</application:Application>

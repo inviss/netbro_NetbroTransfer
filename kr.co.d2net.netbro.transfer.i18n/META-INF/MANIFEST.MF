@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: I18n
+Bundle-SymbolicName: kr.co.d2net.netbro.transfer.i18n
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.9.100"
+Export-Package: kr.co.d2net.netbro.transfer.i18n

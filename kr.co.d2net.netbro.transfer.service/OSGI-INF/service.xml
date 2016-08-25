@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ITransfer context function">
+   <implementation class="kr.co.d2net.netbro.transfer.service.impl.TransferContextFunction"/>
+   <property name="service.context.key" type="String" value="kr.co.d2net.netbro.transfer.model.ITransferService"/>
+   <service>
+      <provide interface="org.eclipse.e4.core.contexts.IContextFunction"/>
+   </service>
+</scr:component>
